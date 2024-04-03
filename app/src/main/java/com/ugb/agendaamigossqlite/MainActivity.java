@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
         try{
             fotoAmigo = crearImagenAmigo();
             if( fotoAmigo!=null ){
-                Uri uriFotoAmigo = FileProvider.getUriForFile(MainActivity.this, "com.ugb.controlesbasicos.fileprovider", fotoAmigo);
+                Uri uriFotoAmigo = FileProvider.getUriForFile(MainActivity.this, "com.ugb.agendaamigossqlite.fileprovider", fotoAmigo);
                 tomarFotoIntent.putExtra(MediaStore.EXTRA_OUTPUT, uriFotoAmigo);
                 startActivityForResult(tomarFotoIntent, 1);
             }else{
