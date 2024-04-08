@@ -1,5 +1,4 @@
 package com.ugb.agendaamigossqlite;
-
 import android.os.AsyncTask;
 
 import java.io.BufferedInputStream;
